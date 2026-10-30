@@ -1,7 +1,7 @@
 # Resource Locks and Fast Unlock: TLA+ Model
 
 TLA+ specification of a certificate-based payment protocol in which several accounts can
-debit one shared resource without consensus. The protocol has three parts:
+debit one shared resource. Consensus runs only when a resource slot is contested. The protocol has three parts:
 
 - **Personal path.** Client-driven certificates, as in FastPay.
 - **Shared path.** A transaction is sent to any validator. It is admitted only if both the
@@ -10,8 +10,8 @@ debit one shared resource without consensus. The protocol has three parts:
 - **Fast unlock.** A stuck resource slot is frozen and resolved by validated agreement on
   that slot only.
 
-This model accompanies the paper *Shared Resources without Consensus: Resource Locks and
-Fast Unlock for Certificate-Based Payment Systems* (Lingkang Shangguan).
+This model accompanies the paper *Resource Locks and Fast Unlock for Shared Balances in
+Certificate-Based Payment Systems* (Lingkang Shangguan).
 
 ## Files
 
